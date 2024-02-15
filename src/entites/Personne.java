@@ -41,9 +41,8 @@ public class Personne {
         this.adresse.ville = adresse.ville.toUpperCase();
     }
 
-    public void printNom(){
-        setNom(nom);
-        System.out.println(getNom()+" "+getPrenom());
+    public void afficheNom(){
+        System.out.println(nom+" "+prenom);
     }
 
 }

@@ -10,8 +10,7 @@ public class TestPersonne {
 
         personne2.setAdresse(personne2.adresse);
         System.out.println(personne2.adresse.ville);
-        personne1.printNom();
-
+        personne1.afficheNom();
 
     }
 }
