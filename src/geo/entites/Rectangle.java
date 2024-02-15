@@ -6,23 +6,24 @@ public class Rectangle extends Figure {
 
     protected double longueur;
 
-    public int getNbAngles() {
-        return nbAngles;
+
+    public Rectangle(String couleur, double hauteur, double longueur) {
+        this("Rectangle", couleur, hauteur, longueur);
     }
 
-    public Rectangle(String nom, String couleur, int nbAngles, double hauteur, double longueur) {
-        super("Rectangle", couleur, 4);
+    public Rectangle(String nom, String couleur, double hauteur, double longueur) {
+        super(nom, couleur, 4);
         this.hauteur = hauteur;
         this.longueur = longueur;
     }
 
     @Override
     public double calculerPerimetre() {
-        return (hauteur+longueur)*2;
+        return (hauteur + longueur) * 2;
     }
 
     @Override
     public double calculerSurface() {
-        return longueur*hauteur;
+        return longueur * hauteur;
     }
 }
